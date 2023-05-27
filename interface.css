@@ -1,0 +1,146 @@
+/*body alignment*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    box-sizing: border-box;
+}
+/*header*/
+.top{
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 25px 12%;
+    background: black;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+}
+
+/*everything on the class move*/
+.move a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right: 10px;
+    font-weight: 600;
+    position: relative;
+}
+/*color change*/
+.move a:hover{
+    color: orangered;
+    }
+/*horizonal orangered*/
+.move a::after{
+        content: '';
+        position: absolute;
+        right: 0;
+        width: 100%;
+        height: 1px;
+        background: orangered;
+        transform: translateX(5);
+        bottom:-2px;
+    }
+
+
+/*everything on the class about*/
+.about a{
+    color: white;
+    font-size: 16px;
+    text-decoration: none;
+    margin-right:10px;
+    font-weight: 600; 
+    position: relative;
+}
+/*color change*/
+.about a:hover{
+    color: orangered;
+    }
+/*horizonal orangered*/
+.about a::after{
+    content: '';
+    position: absolute;
+    right: 0;
+    width: 100%;
+    height: 1px;
+    background: orangered;
+    transform: translateX(5);
+   bottom:-2px;
+}
+
+/*everything about seacrh button and the bar + place holder*/
+.search{
+    width: 240px;
+    height: 35px;
+    background: transparent;
+    border: 2px solid white;
+    border-radius: 20px;
+    display: flex;
+    align-items: center;
+}
+/*content in the bar*/
+.search input{
+    width:100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    color: white;
+    padding: 8px;
+}
+
+/*content in the bar*/
+.search input::placeholder{
+    color: white;
+    font: 14px;
+}
+
+/*on the sumbit button*/
+.search button{
+height: 100%;
+border-radius: 15px;
+background:transparent;
+border-color:white ;
+color: #fff;
+font-size: 14px;
+font-weight: 150;
+}
+
+/*everything about the footer*/
+footer{
+ background: orangered;
+ height: auto;
+ width: 100vw;
+ padding-top: 20px;
+ padding-bottom: 20px;
+ color: white;
+ position: absolute;
+ bottom: 0;
+ left: 0;
+ right: 0;
+}
+.footer-content{
+display: flex;
+align-items: center;
+justify-content: center;
+flex-direction: column;
+text-align: center;
+}
+.footer-content h1{
+    font-size: 16px;
+    font-weight: 300;
+    text-transform: capitalize;  
+}
+.footer-content p{
+    font-size: 14px;
+    font-weight: 300;
+    text-transform: capitalize;  
+}
+.footer-content li{
+    list-style: none;
+}
+.footer-content li a{
+color: #fff;
+font-size: 14px;
+}
